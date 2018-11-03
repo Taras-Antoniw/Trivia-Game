@@ -28,7 +28,7 @@ var timeoutLosses = 0;
 var timeoutQuestion = 8;
 var timeoutGameRefresh = 7;
 var timeoutTimer = 0; 
-var index = 7;
+var index = 0;
 var indexQuestion = 0;
 var timerStop = 0;
 var timeout = false;
@@ -149,7 +149,7 @@ function startTimer() {
         if (timeoutTimer === timeoutQuestion) {
             console.log("Done");
             timeoutTimer = 0;
-            $("#message").html("Time out<br>'");
+            $("#message").html("Time out<br>");
             timeout=true;
             //$("#message").append("The correct answer is: "+correctAnswerReturn()+"<br>");
             //losses++;
